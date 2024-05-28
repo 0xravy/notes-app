@@ -1,6 +1,5 @@
 const myTime = new TimeNow();
 const myNote = new NoteManager();
-// const myGit = new GitHubNoteManager(GITHUB_USERNAME, GITHUB_TOKEN, "private");
 
 const mainLoop = () => {
     date.innerHTML = `${myTime.formattedDate} <br> 1445/11/20`;
