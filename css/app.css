@@ -84,7 +84,7 @@ nav .right {
 	--size: 70px;
 	width: var(--size);
 	height: var(--size);
-	background: var(--fg-color) url(/imgs/user.png);
+	background: var(--fg-color) url(../imgs/user.png);
 	background-size: cover;
 	border-radius: 10px;
 }
