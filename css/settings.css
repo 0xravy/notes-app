@@ -1,0 +1,83 @@
+body {
+	background: var(--bg-color);
+	color: var(--font-color);
+}
+
+main {
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	gap: 3rem;
+}
+
+.back {
+	font-size: 5rem;
+	color: rgba(255,255,255,0.6);
+}
+
+.settings {
+	width: 100%;
+	height: 100%;
+
+}
+
+.settings .lines {
+	display: flex;
+	flex-direction: column;
+	font-size: 2.5rem;
+}
+
+.settings .lines > * {
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
+.settings .lines .line {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	justify-content: space-between;
+}
+
+.settings .lines .line input {
+	height: 100%;
+	width: 50%;
+	padding: 0 1rem;
+	outline: none;
+	border: none;
+	background: rgba(255,255,255,0.02);
+	color: var(--font-color);
+	font-size: 1.7rem;
+}
+
+.settings .lines .line:hover {
+	background: rgba(255,255,255,0.04);
+}
+
+.settings .lines .boxs {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	height: 15rem;
+	width: 100%;
+	
+}
+
+.settings .lines .boxs .container {
+	background: rgba(255,255,255,0.02);
+	height: 100%;
+	width: 100%;
+}
+
+.settings .lines .title {
+	color: rgba(255,255,255,0.4);
+	font-size: 1.7rem;
+	text-transform: uppercase;
+}
+
+.settings .lines .title::before {
+	content: "[ ";
+}
+.settings .lines .title::after {
+	content: " ]";
+}

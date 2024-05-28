@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<!-- CDN CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<!-- CSS FILES -->
+		<link href="css/colors.css" rel="stylesheet">
+		<link href="css/app.css" rel="stylesheet">
+		<!-- JS FILES -->
+		<script src="js/functions.js" defer></script>
+		<script src="js/app.js" defer></script>
+	</head>
+	<body>
+
+		<section class="home">
+			<nav>
+				<div class="left">
+					<div id="date"></div>
+
+					<div class="settings">
+						<a href="pages/settings.html">
+							<i class="fa-solid fa-gear"></i>
+						</a>
+					</div>
+
+					<div id="time"><p></p><p></p><p></p></div>
+				</div>
+
+				<div class="right">
+					<div id="avatar"> </div>
+				</div>
+
+			</nav>
+			<main>
+				<div class="search">
+					<div class="branch">
+						<span>
+							<i class="fa-solid fa-code-branch"></i>
+						</span>
+						<span>
+							main
+						</span>
+						<span>
+							<i class="fa-solid fa-caret-down"></i>
+						</span>
+					</div>
+					<div class="input">
+						<input list="repoList" id="repoSearch">
+						<span>
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</span>
+
+						<datalist id="repoList"></datalist>
+					</div>
+				</div>
+				<div id="cards" class="cards"></div>
+			</main>
+		</section>
+
+	</body>
+</html>
