@@ -84,7 +84,7 @@ nav .right {
 	--size: 70px;
 	width: var(--size);
 	height: var(--size);
-	background: red url(https://media.discordapp.net/attachments/1044330517291606158/1235181328312438824/luko61.jpg?ex=664887c1&is=66473641&hm=9aec396b74dcdffdcf18c2535a99c7d353b46a1a1db65e6b4ee518ee9cc367f8&=&format=webp&width=667&height=666);
+	background: var(--fg-color) url(/imgs/user.png);
 	background-size: cover;
 	border-radius: 10px;
 }
