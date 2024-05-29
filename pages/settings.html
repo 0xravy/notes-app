@@ -9,27 +9,31 @@
 		<!-- CSS FILES -->
 		<link href="../css/colors.css" rel="stylesheet">
 		<link href="../css/settings.css" rel="stylesheet">
+		<!-- JS FILES -->
+		<script src="../js/functions.js" defer></script>
+		<script src="../js/settings.js" defer></script>
 	</head>
 	<body>
 
 		<main>
-			<a class="back" href="../index.html">
-				<i class="fa-solid fa-feather-pointed"></i>
-			</a>
-
+			<div>
+				<a class="back" href="../index.html">
+					<i class="fa-solid fa-feather-pointed"></i>
+				</a>
+			</div>
 			<div class="settings">
 				<div class="lines">
 					<div class="title">theme</div>
 					<div class="boxs">
-						<div class="container"> </div>
+						<div class="container" > </div>
 					</div>
 					<div class="title">font</div>
-					<div class="line">size<input></div>
-					<div class="line">style <input></div>
+					<div class="line">size<input id="fontSize" type="number"></div>
+					<div class="line">style <input id="fontStyle"></div>
 					<div class="title">github</div>
-					<div class="line">name <input></div>
-					<div class="line">repo <input></div>
-					<div class="line">token <input type="text" style="-webkit-text-security: circle;" /></div>
+					<div class="line">name <input id="githubName"></div>
+					<div class="line">repo <input id="githubRepo"></div>
+					<div class="line">token <input id="githubToken" type="text" style="-webkit-text-security: circle;" /></div>
 				</div>
 			</div>
 		</main>

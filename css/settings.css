@@ -1,6 +1,6 @@
 body {
-	background: var(--bg-color);
-	color: var(--font-color);
+	background: var(--base01-color);
+	color: var(--base03-color);
 }
 
 main {
@@ -47,7 +47,7 @@ main {
 	outline: none;
 	border: none;
 	background: rgba(255,255,255,0.02);
-	color: var(--font-color);
+	color: var(--base03-color);
 	font-size: 1.7rem;
 }
 

@@ -15,6 +15,61 @@ class TimeNow {
     get formattedDateTime() { return `${this.hours}:${this.minutes}:${this.seconds} - ${this.formattedDate}`; };
 }
 
+class SettingsManager {
+    constructor() {
+        this.data = {
+            themes: [
+                {
+                    base01: "",
+                    base02: "",
+                    base03: "",
+                    base04: "",
+                    base05: "",
+                },
+            ],
+            font: {
+                size: 12,
+                style: [
+                    "lala",
+                    "lolo",
+                    "lele",
+                ],
+            },
+            github: {
+                name: "lala",
+                repo: "lolo",
+                token: "lele",
+            }
+        }
+
+
+        if(!localStorage.getItem("settings")) {
+            localStorage.setItem("settings", JSON.stringify(this.data));
+            console.log("add settings");
+            console.log(JSON.parse(localStorage.getItem('settings')));
+        }
+    }
+
+    get getData() {
+        return  JSON.parse(localStorage.getItem('settings'));
+    }
+
+    reload() {
+            localStorage.setItem("settings", JSON.stringify(this.data));
+    }
+
+    update(data) {
+            localStorage.setItem("settings", JSON.stringify(data));
+    }
+
+    edit(type, name, value) {
+        let newSettings = this.getData;
+        newSettings[type][name] = value;
+        console.log(newSettings[type][name])
+        this.update(newSettings);
+    }
+}
+
 
 class NoteManager {
     create(emoji, title, content, date)  {

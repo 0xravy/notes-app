@@ -1,4 +1,3 @@
-editorArea.addEventListener("change", () => main());
 editorArea.addEventListener("input", () => main());
 main()
 
@@ -7,6 +6,7 @@ function main() {
     reloadLineNumber();
     reloadLineArea();
 }
+
 
 function reloadLineArea() {
     if(!editorArea.hasChildNodes() || editorArea.firstChild.tagName !== "DIV") {

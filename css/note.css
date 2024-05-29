@@ -1,6 +1,6 @@
 body {
-	background: var(--bg-color);
-	color: var(--font-color);
+	background: var(--base01-color);
+	color: var(--base03-color);
 }
 
 div {
@@ -34,7 +34,7 @@ main .sidebar .top {
 }
 
 main .sidebar .top .branch {
-	background: var(--branch-color);
+	background: var(--base05-color);
 	border-radius: 5px;
 	width: 100%;
 	display: flex;
@@ -46,7 +46,7 @@ main .sidebar .top .branch {
 }
 
 main .sidebar .top .bar {
-	background: var(--branch-color);
+	background: var(--base05-color);
 	border-radius: 5px;
 	display: flex;
 	justify-content: space-between;
@@ -65,7 +65,7 @@ main .sidebar .files {
 main .sidebar .files > * {
 	display: flex;
 	padding: 0.5rem;
-	background: var(--fg-color);
+	background: var(--base02-color);
 }
 
 main .sidebar .files > * > *:first-child {
@@ -108,7 +108,7 @@ main .editor .container .title {
 
 
 main .editor .container .title a {
-	color: var(--font-color);
+	color: var(--base03-color);
 	cursor:pointer;
 }
 

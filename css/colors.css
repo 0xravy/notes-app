@@ -1,9 +1,9 @@
 :root {
-	--bg-color: #0f191f; 
-	--fg-color: #12222b;
-	--font-color: #eeedebe0;
-	--time-color: #27546B;
-	--branch-color: #213845;
+	--base01-color: #0f191f; /* background color */ 
+	--base02-color: #12222b; /* foundground color */ 
+	--base03-color: #eeedebe0; /* font color */ 
+	--base04-color: #27546B; /* praimary color */ 
+	--base05-color: #213845; /* secondary color */ 
 }
 
 * {
