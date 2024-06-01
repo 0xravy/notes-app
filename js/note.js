@@ -3,10 +3,22 @@ main()
 
 
 function main() {
+    console.clear();
     reloadLineNumber();
     reloadLineArea();
+    console.log(editorArea.innerText);
+    getPos();
 }
 
+function getPos() {
+    var sel = document.getSelection(),
+        nd = sel.anchorNode,
+        text = nd.textContent.slice(0, sel.focusOffset);
+
+    var line=text.split("\n").length;
+    var col=text.split("\n").pop().length;
+    console.log("row:"+line+", col:"+col )
+}
 
 function reloadLineArea() {
     if(!editorArea.hasChildNodes() || editorArea.firstChild.tagName !== "DIV") {

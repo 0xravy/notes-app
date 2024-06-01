@@ -4,6 +4,8 @@
 	--base03-color: #eeedebe0; /* font color */ 
 	--base04-color: #27546B; /* praimary color */ 
 	--base05-color: #213845; /* secondary color */ 
+
+	--font-size: 12px;
 }
 
 * {

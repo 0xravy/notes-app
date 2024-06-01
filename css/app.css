@@ -9,6 +9,7 @@
 body {
 	background: var(--base01-color);
 	color: var(--base03-color);
+	font-size: var(--font-size);
 }
 
 .home {
@@ -39,14 +40,14 @@ nav .right {
 }
 
 .settings a {
-	font-size: 5.3rem;
+	font-size: 5.3em;
 	color: rgba(255,255,255, 0.6);
 	cursor: pointer;
 }
 
 #date {
 	position: absolute;
-	font-size: 2rem;
+	font-size: 2em;
 	color: var(--base05-color);
 	top: 1rem;
 	left: 6.3rem;
@@ -59,7 +60,7 @@ nav .right {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	font-size: 2.2rem;
+	font-size: 2.2em;
 	color: var(--base05-color);
 	position: relative;
 }
@@ -107,7 +108,7 @@ main {
 	display: flex;
 	gap: 3rem;
 	height: 4rem;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 
 .search .branch{
@@ -140,7 +141,7 @@ main {
 	border: none;
 	background: none;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 
 .search .input span {
@@ -150,7 +151,7 @@ main {
 	align-items: center;
 	cursor: pointer;
 	padding-left: 0.7rem;
-	font-size: 2rem;
+	font-size: 2em;
 	color: rgba(255,255,255,0.3);
 }
 
@@ -188,7 +189,7 @@ main {
 	left: 0;
 	content: "Branch";
 	color: rgba(255, 255, 255, 0.2);
-	font-size: 2rem;
+	font-size: 2em;
 }
 
 .cards::before {
@@ -214,7 +215,7 @@ main {
 	height: 20%;
 	display: flex;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 
 .cards .card .title::before {
@@ -230,6 +231,6 @@ main {
 	display:flex;
 	justify-content: end;
 	height: 10%;
-	font-size: 13px;
+	font-size: 1em;
 	color: rgba(255, 255, 255, 0.15);
 }

@@ -11,7 +11,7 @@ main {
 }
 
 .back {
-	font-size: 5rem;
+	font-size: 5em;
 	color: rgba(255,255,255,0.6);
 }
 
@@ -24,7 +24,7 @@ main {
 .settings .lines {
 	display: flex;
 	flex-direction: column;
-	font-size: 2.5rem;
+	font-size: 2.5em;
 }
 
 .settings .lines > * {
@@ -35,6 +35,7 @@ main {
 }
 
 .settings .lines .line {
+	font-size: 1em;
 	padding-left: 4rem;
 	padding-right: 4rem;
 	justify-content: space-between;
@@ -48,7 +49,7 @@ main {
 	border: none;
 	background: rgba(255,255,255,0.02);
 	color: var(--base03-color);
-	font-size: 1.7rem;
+	font-size: 1.7em;
 }
 
 .settings .lines .line:hover {
@@ -71,7 +72,7 @@ main {
 
 .settings .lines .title {
 	color: rgba(255,255,255,0.4);
-	font-size: 1.7rem;
+	font-size: 0.7em;
 	text-transform: uppercase;
 }
 
