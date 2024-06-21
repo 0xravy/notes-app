@@ -108,7 +108,6 @@ main {
 	display: flex;
 	gap: 3rem;
 	height: 4rem;
-	font-size: 1.5em;
 }
 
 .search .branch{
@@ -122,6 +121,7 @@ main {
 	padding: 0 1rem;
 	cursor: pointer;
 	color: rgba(255,255,255,0.7);
+	font-size: 1.5em;
 }
 
 .search .input {
@@ -132,6 +132,7 @@ main {
 	border-radius: 10px;
 	padding: 0 1rem;
 	display: flex;
+	font-size: 1.5em;
 }
 
 .search .input input {

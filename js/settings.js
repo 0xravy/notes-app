@@ -1,6 +1,8 @@
 const settings = new SettingsManager();
 
 
+fontSize.value = settings.localSettings.font.size;
+
 // Font event
 fontSize.addEventListener("input", (e) => settings.edit("font", "size", Number(e.target.value)));
 fontStyle.addEventListener("input", (e) => settings.edit("font", "style", e.target.value));

@@ -1,3 +1,4 @@
+const settings = new SettingsManager();
 const myTime = new TimeNow();
 const myNote = new NoteManager();
 

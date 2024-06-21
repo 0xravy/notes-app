@@ -20,11 +20,11 @@ class SettingsManager {
         this.data = {
             themes: [
                 {
-                    base01: "",
-                    base02: "",
-                    base03: "",
-                    base04: "",
-                    base05: "",
+                    base01: "#0f191f",
+                    base02: "#12222b",
+                    base03: "#eeedebe0",
+                    base04: "#27546B",
+                    base05: "#213845",
                 },
             ],
             font: {
@@ -36,9 +36,9 @@ class SettingsManager {
                 ],
             },
             github: {
-                name: "lala",
-                repo: "lolo",
-                token: "lele",
+                name: "",
+                repo: "",
+                token: "",
             }
         }
 
@@ -48,24 +48,30 @@ class SettingsManager {
             console.log("add settings");
             console.log(JSON.parse(localStorage.getItem('settings')));
         }
+
+        document.body.style.setProperty('--font-size', `${this.localSettings.font.size}px`);
     }
 
     get getData() {
         return  JSON.parse(localStorage.getItem('settings'));
     }
 
-    reload() {
-            localStorage.setItem("settings", JSON.stringify(this.data));
+    get localSettings() {
+        return JSON.parse(localStorage.getItem('settings'));
     }
 
-    update(data) {
-            localStorage.setItem("settings", JSON.stringify(data));
+    reload() {
+        localStorage.setItem("settings", JSON.stringify(this.data));
+    }
+
+    update(newData) {
+        localStorage.setItem("settings", JSON.stringify(newData));
+        document.body.style.setProperty('--font-size', `${this.localSettings.font.size}px`);
     }
 
     edit(type, name, value) {
         let newSettings = this.getData;
         newSettings[type][name] = value;
-        console.log(newSettings[type][name])
         this.update(newSettings);
     }
 }

@@ -1,13 +1,14 @@
 body {
 	background: var(--base01-color);
 	color: var(--base03-color);
+	font-size: var(--font-size);
 }
 
 main {
 	width: 100%;
-	padding: 2rem;
+	padding: 2em;
 	display: flex;
-	gap: 3rem;
+	gap: 3em;
 }
 
 .back {
@@ -28,28 +29,28 @@ main {
 }
 
 .settings .lines > * {
-	height: 4rem;
+	height: 4em;
 	display: flex;
 	align-items: center;
-	padding: 0.5rem 0;
+	padding: 0.5em 0;
 }
 
 .settings .lines .line {
 	font-size: 1em;
-	padding-left: 4rem;
-	padding-right: 4rem;
+	padding-left: 4em;
+	padding-right: 4em;
 	justify-content: space-between;
 }
 
 .settings .lines .line input {
 	height: 100%;
 	width: 50%;
-	padding: 0 1rem;
+	padding: 0 1em;
 	outline: none;
 	border: none;
 	background: rgba(255,255,255,0.02);
 	color: var(--base03-color);
-	font-size: 1.7em;
+	font-size: 1.1em;
 }
 
 .settings .lines .line:hover {
@@ -57,9 +58,9 @@ main {
 }
 
 .settings .lines .boxs {
-	padding-left: 4rem;
-	padding-right: 4rem;
-	height: 15rem;
+	padding-left: 4em;
+	padding-right: 4em;
+	height: 15em;
 	width: 100%;
 	
 }
